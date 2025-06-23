@@ -1,0 +1,135 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    color: #3498db;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.experience-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-logo {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.company-logo img {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+.experience-details {
+    padding: 25px;
+}
+
+.company-name {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.position {
+    color: #3498db;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.experience-info {
+    margin-top: 15px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.info-value {
+    color: #333;
+    font-size: 1rem;
+}
+
+.responsibilities {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.responsibilities li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.experience-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-name {
+        font-size: 1.1rem;
+    }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .experience-details {
+        padding: 20px 15px;
+    }
+}
