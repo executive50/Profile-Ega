@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pixel Adventure</h1>
+        <div class="game-info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Lives: <span id="lives">3</span></span>
+            <span>Level: <span id="level">1</span></span>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="resetBtn">Reset</button>
+            <div class="mobile-controls">
+                <button class="arrow-btn" id="upBtn">↑</button>
+                <div>
+                    <button class="arrow-btn" id="leftBtn">←</button>
+                    <button class="arrow-btn" id="downBtn">↓</button>
+                    <button class="arrow-btn" id="rightBtn">→</button>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <p>Use arrow keys or buttons to move</p>
+            <p>Collect coins (★) to score points</p>
+            <p>Avoid enemies (☠) - they reduce your lives!</p>
+            <p>Collect power-ups (⚡) for temporary invincibility</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
