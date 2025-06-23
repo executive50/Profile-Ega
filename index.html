@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ega Prasetyo | LinkedIn Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="spinner"></div>
+        <p>Loading Profile...</p>
+    </div>
+
+    <div class="container" id="mainContent" style="display: none;">
+        <!-- Dark Mode Toggle -->
+        <button class="dark-mode-toggle" id="darkModeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Header Section -->
+        <header class="profile-header">
+            <div class="cover-photo"></div>
+            <div class="profile-info">
+                <img src="images/ega.jpg" alt="Ega" class="profile-pic">
+                <h1>Ega Prasetyo</h1>
+                <p class="headline">Web Developer | JavaScript Enthusiast</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                <div class="connection-info">
+                    <span><i class="fas fa-users"></i> 500+ connections</span>
+                </div>
+                <div class="action-buttons">
+                    <!-- Tombol Connect sekarang akan mengirim email -->
+                    <button class="btn-primary" id="emailConnectBtn">Connect</button>
+                    <!-- Tombol Message sekarang akan mengarahkan ke WhatsApp -->
+                    <button class="btn-secondary" id="whatsappMessageBtn">Message</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="card about-section">
+            <h2>About <button class="toggle-btn" id="aboutToggle"><i class="fas fa-chevron-down"></i></button></h2>
+            <div class="toggle-content" id="aboutContent">
+                <p>Passionate web developer with experience in building responsive websites and web applications. Skilled in HTML, CSS, JavaScript and modern frameworks. Graduated from SMAN 17 Jakarta with focus in Science program.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="card skills-section">
+            <h2>Skills <button class="toggle-btn" id="skillsToggle"><i class="fas fa-chevron-down"></i></button></h2>
+            <div class="toggle-content" id="skillsContent">
+                <div class="skills-list">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Organization</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card education-section">
+            <h2>Education <button class="toggle-btn" id="educationToggle"><i class="fas fa-chevron-down"></i></button></h2>
+            <div class="toggle-content" id="educationContent">
+                <div class="education-item">
+                    <img src="images/logo sman 17.jpg" alt="logo sman 17" class="school-logo">
+                    <div class="edu-details">
+                        <h3>SMAN 17 Jakarta</h3>
+                        <p class="degree">High School Diploma, Natural Science (IPA)</p>
+                        <p class="duration">2015 - 2018</p>
+                        <div class="achievements">
+                            <h4>Achievements & Activities:</h4>
+                            <ul>
+                                <li>Member of Student Council (OSIS) - Rohis Subdivision</li>
+                                <li>Chairman of MPK (Majelis Permusyawaratan Kelas)</li>
+                                <li>Science Olympiad Participant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Modal (Ini tidak lagi digunakan untuk tombol Message, tapi tetap ada jika Anda ingin menggunakannya untuk tujuan lain) -->
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Send Message to Ega</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Connection Sent Notification (Ini tidak lagi digunakan untuk tombol Connect, tapi tetap ada jika Anda ingin menggunakannya untuk tujuan lain) -->
+        <div class="notification" id="connectionNotification">
+            <p>Connection request sent to Ega Prasetyo</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
